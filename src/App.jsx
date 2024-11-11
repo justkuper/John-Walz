@@ -4,31 +4,30 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Nav/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Services from './components/Services/Services';
-import Portfolio from './components/Portfolio/Portfolio';
+import Recordings from './Components/Recordings/Recordings';
+import Performances from './Components/Performances/Performances';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import './App.css'; // Global styling (optional)
+import Reviews from './Components/Reviews/Reviews';
+import './App.css';
 
 const App = () => {
   return (
     <Router>
       <div className="app">
-        {/* Navbar */}
         <Navbar />
 
-        {/* Main Content with Routes */}
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/recordings" element={<Recordings />} />
+            <Route path="/performances" element={<Performances />} />
+            <Route path="/reviews" element={<Reviews />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 
-        {/* Footer */}
         <Footer />
       </div>
     </Router>
