@@ -1,13 +1,13 @@
 // App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Nav/Navbar';
-import Home from './components/Home/Home';
-import About from './components/About/About';
+import Navbar from './Components/Nav/Navbar';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
 import Recordings from './Components/Recordings/Recordings';
 import Performances from './Components/Performances/Performances';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 import Reviews from './Components/Reviews/Reviews';
 import './App.css';
 
