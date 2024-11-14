@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-logo">
-        <h1>John Walz</h1>
+      <div className="navbar-logo uppercase">
+      <span className="first-letter">J</span>ohn <span className="first-letter">W</span>alz
       </div>
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
       <ul ref={menuRef} className="nav-menu">

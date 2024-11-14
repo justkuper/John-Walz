@@ -6,6 +6,17 @@
     justify-content: space-between;
     color: white;
 }
+/* In your CSS file */
+.uppercase {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  
+  .uppercase .first-letter {
+    font-size: 2em; /* Adjust the size of the first letter */
+    font-weight: bold; /* Make it bold, if desired */
+  }
+  
 
 .nav-menu {
     display: flex;
@@ -26,6 +37,7 @@
 
 .navbar-logo {
     position: relative;
+    font-size: x-large;
 }
 
 .navbar-logo h1 {
