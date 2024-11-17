@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Footer.css';
-import user_icon from '../../assets/user_icon.svg';
+
 
 const Footer = () => {
     // State to manage email input

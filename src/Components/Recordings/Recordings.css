@@ -11,7 +11,7 @@
 }
   .recordings h1 {
     font-size: 2.5rem;
-    color: #fec268;
+    color: #DF8908;
     margin-bottom: 20px;
     background-color: #242424;
   }
@@ -51,7 +51,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #f35f3b;
+    background-color: #ff4500;
   }
   
   button:hover {
@@ -59,11 +59,12 @@
   }
   
   .buy-button {
-    background-color: #ff6347;
+    background-color: #ff4500;;
     color: #fff;
   }
   
   .buy-button:hover {
-    background-color: #ff4500;
+    color: #333;
+    background-color: #eaeaea;
   }
   
