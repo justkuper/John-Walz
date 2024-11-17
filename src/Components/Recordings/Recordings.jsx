@@ -5,7 +5,7 @@ const Recordings = () => {
   return (
     <div className="recordings">
       <h1>Recordings</h1>
-      
+      <div className="recording-body">
       {/* Recording 1 */}
       <div className="recording-card">
         <h2>A Tribute to Pierre Fournier</h2>
@@ -43,6 +43,7 @@ const Recordings = () => {
         <button>Play Bruch Kol Nidre</button>
         <button>Play Chopin Introduction and Polonaise</button>
         <button className="buy-button">Buy CD</button>
+      </div>
       </div>
     </div>
   );

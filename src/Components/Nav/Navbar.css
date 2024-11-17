@@ -1,22 +1,23 @@
-/* Navbar.module.css */
-
+/* Navbar styling */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
+    position: relative; /* Ensure the navbar is the reference point for absolute positioning */
 }
-/* In your CSS file */
+
+/* Other Navbar styling remains the same */
 .uppercase {
     text-transform: uppercase;
     display: inline-block;
-  }
-  
-  .uppercase .first-letter {
-    font-size: 2em; /* Adjust the size of the first letter */
-    font-weight: bold; /* Make it bold, if desired */
-  }
-  
+}
+
+.uppercase .first-letter {
+    color: #fec268;
+    font-size: 2em;
+    font-weight: bold;
+}
 
 .nav-menu {
     display: flex;
@@ -67,9 +68,9 @@
     cursor: pointer;
 }
 
-.anchor-link {
-    text-decoration: none;
+.nav-menu li a {
     color: white;
+    text-decoration: none;
 }
 
 .nav-mob-close {
@@ -96,6 +97,7 @@
         display: block;
         position: absolute;
         right: 30px;
+        top: 10px; /* Adjust to position the icon correctly */
     }
 
     .nav-mob-close {
@@ -104,6 +106,7 @@
         top: 30px;
         right: 7%;
         width: 30px;
+        background-color: #ff6347;
     }
 
     .navbar ul {
@@ -112,12 +115,12 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #1f0016;
+        background-color: #ff6347;
         width: 300px;
         height: 100%;
         z-index: 2;
         transition: right 0.5s;
-        right: -300px;
+        right: -400px;
         padding-top: 100px;
     }
 
@@ -125,13 +128,21 @@
         font-size: 22px;
         padding-left: 50px;
         flex-direction: row;
+        background-color: #ff6347;
         gap: 20px;
+    }
+
+    .nav-menu li a {
+        color: white;
+        background-color: #ff6347;
     }
 }
 
 @media (max-width: 425px) {
     .navbar {
         margin: 20px 3%;
+        flex-direction: row; /* Align items horizontally for smaller screens */
+        justify-content: space-between; /* Space out the navbar elements */
     }
 
     .navbar-logo h1 {
@@ -143,21 +154,22 @@
     }
 
     .nav-menu li {
-        font-size: 2.5rem;
-        padding-left: 30px;
+        font-size: 1.3rem;
+        padding-left: 0px;
     }
 
     .nav-mob-close {
         display: block;
         position: absolute;
         right: 2rem;
+        top: 10px; /* Adjust to align it at the top */
     }
 
     .nav-mob-open {
         display: block;
         position: absolute;
-        top: 2rem;
-        right: 10px;
+        top: 10px; /* Align with navbar */
+        right: 1rem;
     }
 
     .navbar ul {
@@ -166,8 +178,8 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #1f0016;
-        width: 20rem;
+        background-color: #ff6347;
+        width: 10rem;
         height: 100%;
         z-index: 2;
         transition: right 0.5s;

@@ -5,6 +5,10 @@
     padding: 20px;
     background-color: #242424;
   }
+.recording-body {
+  display: grid; /* Using Grid layout */
+  grid-template-columns: 1fr 1fr; 
+}
   .recordings h1 {
     font-size: 2.5rem;
     color: #fec268;

@@ -1,0 +1,33 @@
+ .home-text {
+    position: absolute; /* Allows text to overlay the image */
+    top: 50%; /* Adjusts vertical position of text */
+    left: 25%; /* Adjusts horizontal position of text */
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white; /* Adjust text color for visibility */
+    font-size: 1.5rem; /* Adjust font size */
+    background: transparent; /* Optional: Add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Rounded corners for text background */
+    text-align: center;
+    width: 30%;
+  }
+
+@media screen and (max-width: 768px) {
+    .home-text {
+        top: 45%; /* Adjusts vertical position of text */
+        font-size: 0.9rem;
+        width: 35%;
+        left: 28%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .home-text {
+        top: 43%; /* Adjusts vertical position of text */
+        font-size: 0.5rem;
+        width: 60%;
+        left: 50%;
+    }
+    
+}

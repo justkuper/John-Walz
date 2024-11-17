@@ -19,19 +19,38 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo uppercase">
-      <span className="first-letter">J</span>ohn <span className="first-letter">W</span>alz
+        <span className="first-letter">J</span>ohn <span className="first-letter">W</span>alz
       </div>
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
       <ul ref={menuRef} className="nav-menu">
         <img src={menu_close} onClick={closeMenu} alt="" className="nav-mob-close" />
-        
+
         {/* Use Link for navigation */}
-        <li><Link to="/" onClick={() => setMenu("home")}>Home</Link></li>
-        <li><Link to="/about" onClick={() => setMenu("about")}>About</Link></li>
-        <li><Link to="/recordings" onClick={() => setMenu("recordings")}>Recordings</Link></li>
-        <li><Link to="/performances" onClick={() => setMenu("performances")}>Performances</Link></li>
-        <li><Link to="/reviews" onClick={() => setMenu("reviews")}>Reviews</Link></li>
-        <li><Link to="/contact" onClick={() => setMenu("contact")}>Contact</Link></li>
+        <li><Link to="/" onClick={() => {
+          setMenu("home");
+          closeMenu();
+        }}>Home</Link></li>
+        <li><Link to="/about" onClick={() => {
+          setMenu("about");
+          closeMenu();
+        }}>About</Link></li>
+        <li><Link to="/recordings" onClick={() => {
+          setMenu("recordings");
+          closeMenu();
+        }}>Recordings</Link></li>
+        <li><Link to="/performances" onClick={() => {
+          setMenu("performances");
+          closeMenu();
+        }}>Performances</Link></li>
+        <li><Link to="/reviews" onClick={() => {
+          setMenu("reviews");
+          closeMenu();
+        }}>Reviews</Link></li>
+        <li><Link to="/contact" onClick={() => {
+          setMenu("contact");
+          closeMenu();
+        }}>Contact</Link></li>
+        
       </ul>
     </div>
   );

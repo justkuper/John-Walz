@@ -6,7 +6,7 @@ const Performances = () => {
   return (
     <div id='performances' className='performances'>
       <div className="title-box">
-        <h1>My Performances</h1>
+        <h1>Upcoming Performances</h1>
         
       </div>
       <div className="performances-container">
