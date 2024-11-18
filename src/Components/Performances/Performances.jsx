@@ -12,7 +12,7 @@ const Performances = () => {
         {performances.map((performance, index) => (
           <div key={index} className="performance-card">
             <div className="performance-date">
-            <span className="month">{performance.date.split(' ')[1]}</span>
+              <span className="month">{performance.date.split(' ')[1]}</span>
               <span className="day">{performance.date.split(' ')[0]}</span>
               
             </div>

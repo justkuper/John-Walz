@@ -1,5 +1,6 @@
 /* Container for the performances section */
 .performances-container {
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px; /* Spacing between each card */
@@ -12,6 +13,7 @@
   
   /* Styling each performance card */
   .performance-card {
+    font-family: 'Arial', sans-serif;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -36,14 +38,15 @@
   
   .performance-date .day {
      /* Dark text color for the day */
+     font-family: 'Arial', sans-serif;
      font-size: 14px;
     text-transform: uppercase;
     color: #777;
   }
   
   .performance-date .month {
-    
-    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-size: 34px;
     font-weight: bold;
     color: #333; /* Lighter text color for the month */
   }
@@ -56,6 +59,7 @@
   }
   
   .event-name {
+    font-family: 'Arial', sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #000; /* Black text for event name */
@@ -63,13 +67,17 @@
   }
   
   .event-time {
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     color: #555; /* Subtle color for event time */
     margin: 5px 0;
   }
   
   .event-location {
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     color: #555; /* Subtle color for location */
   }
+
+
   
