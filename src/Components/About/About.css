@@ -98,12 +98,12 @@
 }
 @media(max-width:768px){
     .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
+    
+        align-items: center;
     }
     .about-title h1{
-        font-size: 50px;
+        margin-top: 1rem;
+        font-size: 3.5rem;
         padding: 0;
     }
     .about-title img{

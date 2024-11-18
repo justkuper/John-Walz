@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    position: relative; /* Ensure the navbar is the reference point for absolute positioning */
+    position: relative;
+    /* Ensure the navbar is the reference point for absolute positioning */
 }
 
 /* Other Navbar styling remains the same */
@@ -96,16 +97,18 @@
     .nav-mob-open {
         display: block;
         position: absolute;
-        right: 30px;
-        top: 10px; /* Adjust to position the icon correctly */
+        right: 1px;
+        top: 10px;
+        /* Adjust to position the icon correctly */
     }
 
     .nav-mob-close {
         display: block;
         position: absolute;
         top: 30px;
-        right: 7%;
+        right: 12%;
         width: 30px;
+        height: max-content;
         background-color: #ff6347;
     }
 
@@ -122,6 +125,10 @@
         transition: right 0.5s;
         right: -400px;
         padding-top: 100px;
+    }
+
+    .nav-menu {
+        margin: 0;
     }
 
     .nav-menu li {
@@ -141,8 +148,10 @@
 @media (max-width: 425px) {
     .navbar {
         margin: 20px 3%;
-        flex-direction: row; /* Align items horizontally for smaller screens */
-        justify-content: space-between; /* Space out the navbar elements */
+        flex-direction: row;
+        /* Align items horizontally for smaller screens */
+        justify-content: space-between;
+        /* Space out the navbar elements */
     }
 
     .navbar-logo h1 {
@@ -151,6 +160,10 @@
 
     .navbar-logo img {
         width: 150px;
+    }
+
+    .nav-menu {
+        margin: 0;
     }
 
     .nav-menu li {
@@ -162,13 +175,15 @@
         display: block;
         position: absolute;
         right: 2rem;
-        top: 10px; /* Adjust to align it at the top */
+        top: 2rem;
+        /* Adjust to align it at the top */
     }
 
     .nav-mob-open {
         display: block;
         position: absolute;
-        top: 10px; /* Align with navbar */
+        top: 10px;
+        /* Align with navbar */
         right: 1rem;
     }
 
@@ -179,7 +194,7 @@
         top: 0;
         gap: 30px;
         background-color: #ff6347;
-        width: 10rem;
+        width: 12rem;
         height: 100%;
         z-index: 2;
         transition: right 0.5s;

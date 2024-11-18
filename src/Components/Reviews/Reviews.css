@@ -4,7 +4,10 @@
   grid-template-columns: 1fr 1fr; 
     gap: 20px; /* Adds space between review items */
   }
-  
+  .title-box h1{
+    font-size: 3.5rem;
+    color: #DF8908;
+  }
   .review-item {
     background: #fec268;
     border: 1px solid #f35f3b;
@@ -44,4 +47,8 @@
   .review-item h2 {
     background-color: #fec268;
   }
-  
+  @media (max-width: 768px) {
+    .reviews-container {
+      grid-template-columns: 1fr; /* Adjusts to single column layout */
+    }
+  }

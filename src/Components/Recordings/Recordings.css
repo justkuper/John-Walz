@@ -10,7 +10,7 @@
   grid-template-columns: 1fr 1fr; 
 }
   .recordings h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #DF8908;
     margin-bottom: 20px;
     background-color: #242424;
@@ -67,4 +67,24 @@
     color: #333;
     background-color: #eaeaea;
   }
-  
+@media (max-width: 768px) {
+  .recordings h1 {
+    margin: 0;
+  }
+  .recording-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recording-card {
+    width: 100%;
+  }
+}
+@media(max-width:425px) {
+  .recording-card {
+    width: 85%;
+  }
+  .recording-card p {
+    font-size: 0.8rem;
+  }
+}

@@ -2,8 +2,8 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Navbar.css';
-import menu_open from '../../assets/menus.png';
-import menu_close from '../../assets/arrow.png';
+import menu_open from '../../assets/menu_open.svg';
+import menu_close from '../../assets/menu-close.svg';
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");

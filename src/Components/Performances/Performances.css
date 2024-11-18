@@ -1,7 +1,75 @@
-*{
-    background-color: #242424;
-}
+/* Container for the performances section */
+.performances-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between each card */
+    margin-top: 20px;
+  }
 
-.title-box{
+  .performances .title-box h1{
     color: #DF8908;
-}
+  }
+  
+  /* Styling each performance card */
+  .performance-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd; /* Subtle border for card */
+    border-radius: 8px; /* Rounded edges */
+    background-color: #fff; /* White background */
+    gap: 20px;
+  }
+  
+  /* Date styling */
+  .performance-date {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px; /* Fixed width for date block */
+    text-align: center;
+    border-right: 1px solid #ddd; /* Separator */
+    padding-right: 20px;
+  }
+  
+  .performance-date .day {
+     /* Dark text color for the day */
+     font-size: 14px;
+    text-transform: uppercase;
+    color: #777;
+  }
+  
+  .performance-date .month {
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Lighter text color for the month */
+  }
+  
+  /* Details styling */
+  .performance-details {
+    font-family: 'Arial', sans-serif;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .event-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Black text for event name */
+    margin: 0;
+  }
+  
+  .event-time {
+    font-size: 14px;
+    color: #555; /* Subtle color for event time */
+    margin: 5px 0;
+  }
+  
+  .event-location {
+    font-size: 14px;
+    color: #555; /* Subtle color for location */
+  }
+  
