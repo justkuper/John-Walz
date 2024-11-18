@@ -105,8 +105,8 @@
     .nav-mob-close {
         display: block;
         position: absolute;
-        top: 30px;
-        right: 12%;
+        top: 41px;
+        right: 16%;
         width: 30px;
         height: max-content;
         background-color: #ff6347;
@@ -174,7 +174,7 @@
     .nav-mob-close {
         display: block;
         position: absolute;
-        right: 2rem;
+        right: 2.2rem;
         top: 2rem;
         /* Adjust to align it at the top */
     }
